@@ -48,8 +48,8 @@
             <div class="formulario">
                 <h4>Completa los datos</h4>
                 <label for="nombre">
-                    <input for="text" name="nombre" placeholder="Nombre y Apellido" pattern="[A-Za-z0-9!?-@]{6,12}"
-                        class="click" required>
+                    <input for="text" name="nombre" placeholder="Nombre y Apellido"
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="click" required>
                     <div class="invalido">Debes completar este campo sólo con letras. <i
                             class="fa-solid fa-circle-exclamation" id="icono"></i></div>
                 </label>
@@ -59,7 +59,8 @@
                 <label for="nombre">
                     <input type="text" name="nombreUsuario" placeholder="Nombre del usuario"
                         pattern="[A-Za-z0-9!?-@]{6,12}" class="click" require>
-                        <div class="invalido">Debes completar este campo sólo con letras y/o numeros. <i class="fa-solid fa-circle-exclamation" id="icono"></i></div>
+                    <div class="invalido">Debes completar este campo sólo con letras y/o numeros. <i
+                            class="fa-solid fa-circle-exclamation" id="icono"></i></div>
                 </label>
             </div>
 
@@ -91,16 +92,14 @@
                 <h4>Perfil de Usuario</h4>
                 <div class="tipo">
                     <div class="tipo-usuario">
-                        <label for="comprador">Comprador<input type="radio" name="perfil" id="comprador"
-                                class="radio">
-                        <div class="invalido">Debes elegir un perfil de usuario.</div>
+                        <label for="comprador">Comprador<input type="radio" name="perfil" id="comprador" class="radio">
+                            <div class="invalido">Debes elegir un perfil de usuario.</div>
                         </label>
                     </div>
 
                     <div class="tipo-usuario">
-                        <label for="vendedor">Vendedor<input type="radio" name="perfil" id="vendedor"
-                                class="radio">
-                        <div class="invalido">Debes elegir un perfil de usuario.</div>
+                        <label for="vendedor">Vendedor<input type="radio" name="perfil" id="vendedor" class="radio">
+                            <div class="invalido">Debes elegir un perfil de usuario.</div>
                         </label>
                     </div>
                 </div>
@@ -135,15 +134,21 @@
                     <label for="pass">
                         <input type="password" name="passaword" placeholder="contraseña" pattern="[A-Za-z0-9!?-@]{6,12}"
                             class="click" required>
+                        <div class="invalido">Debes elegir una contraseña válida<i
+                                class="fa-solid fa-circle-exclamation" id="icono"></i></div>
                         <input type="password" name="passawordconfirm" placeholder="confirme contraseña"
-                            pattern="[A-Za-z0-9!?-@]{6,12}" class="click" required>
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="click" required>
+                        <div class="invalido">Repite una contraseña <i
+                                class="fa-solid fa-circle-exclamation" id="icono"></i></div>
                     </label>
                 </div>
             </div>
 
             <div class="formulario">
-                <button type="submit">Enviar y crear tu cuenta</button>
-                <button type="reset">Borrar</button>
+                <div class="final">
+                <button type="submit" class="boton">Enviar y crear tu cuenta</button>
+                <button type="reset" class="boton" id="anular">Borrar</button>
+                </div>
             </div>
         </form>
     </main>

@@ -1,37 +1,43 @@
-
-*{
-    margin:0 auto;
-    padding:0;
+* {
+    margin: 0 auto;
+    padding: 0;
 }
-.main{
+
+.main {
     align-items: baseline;
     text-align: left;
-    margin: 0 ;
+    margin: 0;
     display: inline-block;
-    padding:0;
+    padding: 0;
 }
-.main-section{
+
+.main-section {
     width: 100%;
     padding: 20px 15px;
 }
-.main-section div{
+
+.main-section div {
     text-align: left;
 }
-.formulario{
+
+.formulario {
     align-items: baseline;
     text-align: left;
     margin: 0;
     padding: 25px;
 }
-div.formulario{
+
+div.formulario {
     text-align: left;
     margin-bottom: 10px;
     display: inline-block;
 }
-.click{
-     width: 300px;
-     padding: 8px;   
+
+.click {
+    width: 300px;
+    padding: 8px;
 }
+
 .formulario input {
     border: none;
     margin-top: 15px;
@@ -41,10 +47,12 @@ div.formulario{
     padding: 10px;
     font-size: 15px;
 }
-.formulario h4{
-    margin-bottom: 5px;
-    margin-top: 5px;
+
+.formulario h4 {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
 .invalido {
     display: none;
     position: absolute;
@@ -54,12 +62,12 @@ div.formulario{
     font-size: 10px;
 }
 
-.invalido i{
+.invalido i {
     position: absolute;
     font-size: 18px;
 }
 
-#icono{
+#icono {
     position: absolute;
     right: 5px;
     font-size: 18px;
@@ -74,14 +82,15 @@ div.formulario{
     padding: 5px 10px;
     border-radius: 5px;
 }
-input.click{
+
+input.click {
     width: auto;
 }
 
 .imagen {
     position: relative;
     display: inline-block;
-    margin: -10px 10px;
+    margin: -4px;
 }
 
 .imagen::before {
@@ -104,45 +113,69 @@ input.click{
     opacity: 0;
     width: 150px;
     height: 20px;
-    display: inline-block;
+    display: flex;
 }
 
 #src-file1::before {
     content: 'Selecciona tu avatar';
 }
 
-div.formulario .image-h4{ 
+div.formulario .image-h4 {
     margin-top: 20px;
     margin-bottom: 10px !important;
 }
 
-div.tipo{
+div.tipo {
     display: flex;
     align-items: center;
     position: relative;
+    margin: auto;
 }
 
 div.tipo-usuario {
-align-items: center;
-width: 50%;
-display: contents;
-padding-left: 15px;
-flex-direction: row;
+    align-items: center;
+    width: 50%;
+    display: contents;
+    padding-left: 15px;
+    flex-direction: row;
 }
 
-div.tipo-usuario input{
-    margin:25px;
+div.tipo-usuario input {
+    margin: 15px;
 }
 
-div.tipo-usuario label{
+div.tipo-usuario label {
     margin-right: 5px;
     height: 45px;
 }
-div.categorias-general{
-    margin-top:5px;
+
+div.categorias-general {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
 }
-div.usuario{
+
+div.usuario {
     margin-top: -4px;
+}
+
+div.password{
+    margin: -10px;
+}
+.boton {
+    background-color: green;
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin:10px;
+}
+
+.boton#anular {
+    background-color: grey;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+
 }
