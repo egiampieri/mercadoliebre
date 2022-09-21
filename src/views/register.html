@@ -48,8 +48,7 @@
             <div class="formulario">
                 <h4>Completa los datos</h4>
                 <label for="nombre">
-                    <input for="text" name="nombre" placeholder="Nombre y Apellido"
-                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="click" required>
+                    <input for="text" name="nombre" placeholder="Nombre y Apellido" class="click"  pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required>
                     <div class="invalido">Debes completar este campo sólo con letras. <i
                             class="fa-solid fa-circle-exclamation" id="icono"></i></div>
                 </label>
@@ -57,8 +56,7 @@
 
             <div class="formulario">
                 <label for="nombre">
-                    <input type="text" name="nombreUsuario" placeholder="Nombre del usuario"
-                        pattern="[A-Za-z0-9!?-@]{6,12}" class="click" require>
+                    <input type="text" name="nombreUsuario" placeholder="Nombre del usuario" pattern="[A-Za-z0-9!?-@]{6,12}" class="click" require>
                     <div class="invalido">Debes completar este campo sólo con letras y/o numeros. <i
                             class="fa-solid fa-circle-exclamation" id="icono"></i></div>
                 </label>
@@ -66,7 +64,7 @@
 
             <div class="formulario">
                 <label for="nombre">
-                    <input type="email" name="email" placeholder="E-mail" pattern="[A-Za-z0-9!?-@]{6,12}" class="click"
+                    <input type="email" name="email" placeholder="E-mail" class="click" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
                         require>
                     <div class="invalido">Debes completar este campo sólo con letras. <i
                             class="fa-solid fa-circle-exclamation" id="icono"></i></div>
@@ -84,7 +82,7 @@
             <div class="formulario">
                 <h4>Lugar de residencia</h4>
                 <label for="domicilio">
-                    <input type="text" name="domicilio" placeholder="domicilio" class="click" require>
+                    <input type="text" name="domicilio" placeholder="domicilio" class="click"  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" require>
                 </label>
             </div>
 
