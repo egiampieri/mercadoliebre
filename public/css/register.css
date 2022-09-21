@@ -1,0 +1,148 @@
+
+*{
+    margin:0 auto;
+    padding:0;
+}
+.main{
+    align-items: baseline;
+    text-align: left;
+    margin: 0 ;
+    display: inline-block;
+    padding:0;
+}
+.main-section{
+    width: 100%;
+    padding: 20px 15px;
+}
+.main-section div{
+    text-align: left;
+}
+.formulario{
+    align-items: baseline;
+    text-align: left;
+    margin: 0;
+    padding: 25px;
+}
+div.formulario{
+    text-align: left;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.click{
+     width: 300px;
+     padding: 8px;   
+}
+.formulario input {
+    border: none;
+    margin-top: 15px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+}
+.formulario h4{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.invalido {
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    color: red;
+    font-size: 10px;
+}
+
+.invalido i{
+    position: absolute;
+    font-size: 18px;
+}
+
+#icono{
+    position: absolute;
+    right: 5px;
+    font-size: 18px;
+
+}
+
+.button-form {
+    background-color: green;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+input.click{
+    width: auto;
+}
+
+.imagen {
+    position: relative;
+    display: inline-block;
+    margin: -10px 10px;
+}
+
+.imagen::before {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 15px;
+    content: 'Selecciona tu avatar';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4;
+    bottom: 0;
+}
+
+.imagen input[type="file"] {
+    opacity: 0;
+    width: 150px;
+    height: 20px;
+    display: inline-block;
+}
+
+#src-file1::before {
+    content: 'Selecciona tu avatar';
+}
+
+div.formulario .image-h4{ 
+    margin-top: 20px;
+    margin-bottom: 10px !important;
+}
+
+div.tipo{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+div.tipo-usuario {
+align-items: center;
+width: 50%;
+display: contents;
+padding-left: 15px;
+flex-direction: row;
+}
+
+div.tipo-usuario input{
+    margin:25px;
+}
+
+div.tipo-usuario label{
+    margin-right: 5px;
+    height: 45px;
+}
+div.categorias-general{
+    margin-top:5px;
+    display: flex;
+    flex-direction: column;
+}
+div.usuario{
+    margin-top: -4px;
+}
