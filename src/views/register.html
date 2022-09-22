@@ -35,7 +35,7 @@
             </ul>
 
             <ul class="derecha">
-                <li><a href="./register.html" target="_blank">Creá tu cuenta</a><i
+                <li><a href="./register" target="_blank">Creá tu cuenta</a><i
                         class="fa-regular fa-id-card"></i></i></li>
                 <li><a href="./login" target="_blank">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href="#" target="_blank">Mis compras </a><i class="fa-solid fa-cart-shopping"></i></li>
@@ -82,7 +82,7 @@
             <div class="formulario">
                 <h4>Lugar de residencia</h4>
                 <label for="domicilio">
-                    <input type="text" name="domicilio" placeholder="domicilio" class="click"  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" require>
+                    <input type="text" name="domicilio" placeholder="domicilio" class="click"  pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" require>
                 </label>
             </div>
 
@@ -130,13 +130,13 @@
                 <h4>Elige tu contraseña</h4>
                 <div class="password">
                     <label for="pass">
-                        <input type="password" name="passaword" placeholder="contraseña" pattern="[A-Za-z0-9!?-@]{6,12}"
+                        <input type="password" name="passaword" placeholder="contraseña"   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             class="click" required>
                         <div class="invalido">Debes elegir una contraseña válida<i
                                 class="fa-solid fa-circle-exclamation" id="icono"></i></div>
                         <input type="password" name="passawordconfirm" placeholder="confirme contraseña"
                             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="click" required>
-                        <div class="invalido">Repite una contraseña <i
+                        <div class="invalido">Reingresa tu contraseña<i
                                 class="fa-solid fa-circle-exclamation" id="icono"></i></div>
                     </label>
                 </div>
@@ -144,7 +144,7 @@
 
             <div class="formulario">
                 <div class="final">
-                <button type="submit" class="boton">Enviar y crear tu cuenta</button>
+                <button type="submit" class="boton"><a href="./home" target="_blank"></a>Enviar y crear tu cuenta</button>
                 <button type="reset" class="boton" id="anular">Borrar</button>
                 </div>
             </div>

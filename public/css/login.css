@@ -1,0 +1,95 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main {
+    align-items: baseline;
+    text-align: left;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+}
+
+.main-section {
+    width: 100%;
+
+}
+
+.main-section div {
+    text-align: left;
+}
+
+.formulario {
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+    margin: 0;
+    padding: 25px;
+    align-items: center;
+    align-content: center;
+}
+
+div.formulario {
+    text-align: left;
+}
+
+input.click {
+    width: 250px;
+    padding: 8px;
+    margin:10px
+}
+
+.formulario input {
+    border: none;
+    margin-top: 15px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.formulario h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.invalido {
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    color: red;
+    font-size: 10px;
+}
+
+.invalido i {
+    position: absolute;
+    font-size: 18px;
+}
+
+#icono {
+    position: absolute;
+    right: 5px;
+    font-size: 18px;
+}
+
+.olvido{
+    padding:10px;
+    margin-left: 25px;
+}
+.boton {
+    background-color: green;
+    border: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin:10px; 
+    list-style: none;
+}
+.boton a{
+    color: white;
+    text-decoration: none;
+}
+

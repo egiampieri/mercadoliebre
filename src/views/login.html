@@ -9,9 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/login.css">
-    link
 </head>
 
 <body>
@@ -37,9 +35,9 @@
             </ul>
 
             <ul class="derecha">
-                <li><a href="./register.html" target="_blank">Creá tu cuenta</a><i
+                <li><a href="./register" target="_blank">Creá tu cuenta</a><i
                         class="fa-regular fa-id-card"></i></i></li>
-                <li><a href="./login.html" target="_blank">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="./login" target="_blank">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href="#" target="_blank">Mis compras </a><i class="fa-solid fa-cart-shopping"></i></li>
             </ul>
 
@@ -48,7 +46,7 @@
     <main>
         <form action="/login" method="get" class="main-section">
             <div class="formulario">
-                <h4>Inicia sesión</h4>
+                <h4>Escribe tu nombre de usuario</h4>
                 <label for="nombre">
                     <input type="text" name="nombreUsuario" placeholder="Nombre del usuario"
                         pattern="[A-Za-z0-9!?-@]{6,12}" class="click" require>
@@ -58,18 +56,24 @@
             </div>
 
             <div class="formulario">
-                <h4>Elige tu contraseña</h4>
+                <h4>Escribe tu contraseña</h4>
                 <div class="password">
                     <label for="pass">
                         <input type="password" name="passaword" placeholder="contraseña" pattern="[A-Za-z0-9!?-@]{6,12}"
                             class="click" required>
-                        <div class="invalido">Debes elegir una contraseña válida<i
+                        <div class="invalido">Debes completar este campo para loguearte<i
                                 class="fa-solid fa-circle-exclamation" id="icono"></i></div>
+                        <ul class="olvido"><a href="#" target="_blank">¿Olvidaste tu contraseña?</a></ul>
+                        </div>
                     </label>
-                    <div class="button-login">
-                        <button type="submit" class="button-form"> <a href="/" target="_blank">Creá tu
-                                cuenta</a></button>
+                </div>
+            </div>
+
+            <div class="formulario">
+                    <div class="final">
+                        <button type="submit" class="boton"><a href="./home" target="_blank">Ingresa</a></button>
                     </div>
+            <div>
         </form>
     </main>
     <footer>

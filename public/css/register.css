@@ -94,7 +94,7 @@ input.click {
 }
 
 .imagen::before {
-    background-color: blue;
+    background-color: rgb(54, 54, 207);
     color: white;
     display: flex;
     justify-content: center;
